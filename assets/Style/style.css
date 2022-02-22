@@ -62,6 +62,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    min-width: 100%;
 }
 
 h2 {
