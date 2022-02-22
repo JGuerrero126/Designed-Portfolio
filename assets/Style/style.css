@@ -59,12 +59,21 @@ figcaption {
 
 main {
     background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 h2 {
-    font-size: 150%;
+    font-size: 200%;
+    margin-left: 35px;
 }
 
+main section {
+    min-width: 100%;
+    border: 4px solid black;
+    flex-direction:column;
+}
 .hero {
     height: 800px;
     width: 100%;
