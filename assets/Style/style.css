@@ -83,6 +83,11 @@ main section {
     z-index: 1;
 }
 
+.work  h2{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 .work a,
 .work figure {
     display: inline-block;
@@ -114,6 +119,16 @@ main section {
     margin-left: 300px;
     margin-right: 100px;
     margin-bottom: 50px;
+}
+
+.about-me a {
+    color: black;
+    text-decoration: none;
+}
+
+.about-me p:hover a {
+    color: #BA0000;
+    transition: 1s;
 }
 
 section div {
