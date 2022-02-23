@@ -49,7 +49,7 @@ a {
     text-decoration: none;
 }
 
-figcaption {
+.hero figcaption {
     font-family:var(--font);
     float: right;
     margin-top: 750px;
@@ -72,7 +72,6 @@ h2 {
 
 main section {
     min-width: 100%;
-    border: 4px solid black;
     flex-direction:column;
 }
 .hero {
@@ -82,4 +81,33 @@ main section {
     background-size: cover;
     background-position: center;
     z-index: 1;
+}
+
+.work a,
+.work figure {
+    display: inline-block;
+    margin-left: 10px;
+    max-width: 600px;
+    min-width: 600px;
+    height: 600px;
+    min-height: 600px;
+}
+.work figure:hover {
+    box-shadow: 4px 4px 4px var(--gray);
+    border: 6px solid var(--gray);
+    transition: 0.25s;
+}
+
+.work figure {
+    border: 2px solid var(--gray);
+}
+
+.work figcaption {
+   margin-left: 15px;
+   margin-top: 10px;
+}
+
+.about-me p {
+    text-align: center;
+    margin-left: 100px;
 }
