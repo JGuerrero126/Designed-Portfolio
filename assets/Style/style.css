@@ -163,7 +163,7 @@ main section {
 }
 
 .about-me p:hover {
-    text-shadow: 4px 4px 4px gray;
+    text-shadow: 4px 4px 4px var(--white);
 }
 
 .contact-me a {
