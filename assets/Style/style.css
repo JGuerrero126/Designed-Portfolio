@@ -3,6 +3,7 @@
     --font: "Permanent marker";
     --gray: #707070;
     --red: #BA0000;
+    --darkgray: #3D3D3D;
 }
 
 * {
@@ -63,7 +64,7 @@ header a,
 }
 
 main {
-    background-color: var(--white);
+    background-image: linear-gradient(var(--gray), var(--white), var(--gray), var(--white));
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -128,7 +129,7 @@ main section {
 
 .work figure:hover {
     box-shadow: 4px 4px 4px var(--gray);
-    border: 6px solid #3D3D3D;
+    border: 6px solid var(--white);
 }
 
 .work figure:hover div {
@@ -148,6 +149,7 @@ main section {
     margin-left: 300px;
     margin-right: 100px;
     margin-bottom: 50px;
+    transition: 0.5s;
 }
 
 .about-me a {
@@ -158,6 +160,10 @@ main section {
 
 .about-me p:hover a {
     color: var(--red);
+}
+
+.about-me p:hover {
+    text-shadow: 4px 4px 4px gray;
 }
 
 .contact-me a {
