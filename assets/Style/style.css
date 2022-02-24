@@ -163,3 +163,10 @@ main section {
 .contact-me a {
     transition: 0.5s;
 }
+
+.contact-me ul li {
+    list-style-type: none;
+    font-size: 200%;
+    display: inline-block;
+    margin-left: 100px;
+}
