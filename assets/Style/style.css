@@ -2,6 +2,7 @@
     --white: #F2F2F2;
     --font: "Permanent marker";
     --gray: #707070;
+    --red: #BA0000;
 }
 
 * {
@@ -20,13 +21,13 @@ header h1 {
     text-align: left;
     display: inline;
     font-size: 250%;
+    transition: 0.25s;
 }
 header h1:hover,
 header nav ul li a:hover,
 section ul li a:hover {
     color: black;
     text-shadow: 4px 4px 4px var(--gray);
-    transition: 0.25s;
 }
 
 
@@ -44,6 +45,9 @@ header nav ul li {
     padding: 10px;
 }
 
+header nav ul li a {
+    transition: 0.25s;
+}
 header a,
 .contact-me a {
     color: var(--gray);
@@ -66,9 +70,32 @@ main {
     min-width: 100%;
 }
 
+section div {
+    display: inline-block;
+    background-color: black;
+    border-radius: 8px;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-top: 90px;
+}
+
 h2 {
     font-size: 200%;
-    margin-left: 35px;
+    text-decoration: underline solid black;
+    transition: 0.5s;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+h2:hover {
+    color: var(--red);
+    text-decoration: none;
+    text-shadow: 4px 4px 4px var(--gray);
+
 }
 
 main section {
@@ -83,11 +110,6 @@ main section {
     z-index: 1;
 }
 
-.work  h2{
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
 .work a,
 .work figure {
     display: inline-block;
@@ -96,22 +118,29 @@ main section {
     min-width: 600px;
     height: 600px;
     min-height: 600px;
+    transition: 0.5s;
 }
+
+.work figure div {
+    color: var(--white);
+    transition: 1s;
+}
+
 .work figure:hover {
     box-shadow: 4px 4px 4px var(--gray);
     border: 6px solid #3D3D3D;
-    transition: 0.5s;
+}
+
+.work figure:hover div {
+    width: 200px;
+    background-color: var(--white);
+    color: var(--red);
 }
 
 .work figure {
     border: 2px solid var(--gray);
 }
 
-.about-me h2 {
-    text-align: left;
-    margin-left: 30px;
-    margin-top: 60px;
-}
 .about-me p {
     font-size: 150%;
     text-align: center;
@@ -124,20 +153,13 @@ main section {
 .about-me a {
     color: black;
     text-decoration: none;
-}
-
-.about-me p:hover a {
-    color: #BA0000;
     transition: 1s;
 }
 
-section div {
-    display: inline-block;
-    background-color: black;
-    border-radius: 8px;
-    padding: 25px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15px;
-    margin-top: 90px;
+.about-me p:hover a {
+    color: var(--red);
+}
+
+.contact-me a {
+    transition: 0.5s;
 }
