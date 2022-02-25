@@ -133,7 +133,8 @@ h2:hover {
 }
 
 .about-me p:hover {
-    text-shadow: 4px 4px 4px var(--white);
+    text-shadow: 3px 3px 3px black;
+    color: var(--white);
 }
 
 .work a,
