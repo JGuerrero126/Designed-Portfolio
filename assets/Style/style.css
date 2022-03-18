@@ -56,6 +56,7 @@ header a,
 }
 
 .hero {
+    margin: 0;
     height: 800px;
     width: 100%;
     background-size: cover;
@@ -82,17 +83,6 @@ main {
 main section {
     min-width: 100%;
     flex-direction:column;
-}
-
-section div {
-    display: inline-block;
-    background-color: black;
-    border-radius: 8px;
-    padding: 25px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15px;
-    margin-top: 90px;
 }
 
 h2 {
@@ -137,34 +127,44 @@ h2:hover {
     color: var(--white);
 }
 
-.work a,
-.work figure {
+.custom-container,
+.custom-container a,
+.custom-container img {
+    width: 600px;
+    margin-top: 10px;
+    position: relative;
     display: inline-block;
-    margin-left: 10px;
-    max-width: 600px;
-    min-width: 600px;
-    height: 600px;
-    min-height: 600px;
     transition: 0.5s;
+    margin-right: 10px;
 }
 
-.work figure div {
+
+.caption {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    background-color: black;
+    border-radius: 8px;
+    padding: 25px;
+    margin-left: 15px;
+}
+
+.work div {
     color: var(--white);
     transition: 1s;
 }
 
-.work figure:hover {
+.work img:hover {
     box-shadow: 4px 4px 4px var(--gray);
     border: 6px solid var(--white);
 }
 
-.work figure:hover div {
-    width: 200px;
+.work a:hover div {
     background-color: var(--white);
     color: var(--red);
 }
 
-.work figure {
+.work img {
     border: 2px solid var(--gray);
 }
 
@@ -212,20 +212,47 @@ h2:hover {
 }
   
 @media screen and (max-width: 576px) {
+    h2 {
+        font-size: 275%;
+    }
+
     header {
-      padding-bottom: 100px;
+        font-size: 150%;
+        padding-top: 10px;
+        padding-bottom: 300px;
+    }
+
+    header h1 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header ul li {
+        width: 100%;
     }
 
     .about-me p {
-        margin-left: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
-    .work a,
-    .work figure {
-        margin-left: 15px;
-        max-width: 500px;
-        min-width: 500px;
-        height: 500px;
-        min-height: 500px;
+    .custom-container,
+    .custom-container a,
+    .custom-container img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 375px;
+    }
+
+    .contact-me ul {
+        font-size: 150%;
+        padding-left: 0;
+    }
+
+    .contact-me ul li {
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }

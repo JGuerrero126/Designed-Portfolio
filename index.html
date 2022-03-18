@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/Favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/Favicons/favicon-16x16.png">
     <link rel="stylesheet" href="./assets/Style/reset.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/Style/style.css" />
     <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Permanent+Marker">
@@ -15,7 +16,7 @@
 <body>
 
     <header>
-        <h1>Jerry "JJ" Guerrero</h1>
+        <h1>Jerry Guerrero</h1>
         <nav>
             <ul>
                 <li>
@@ -28,7 +29,7 @@
                     <a href="#contact-me">Contact Me</a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/jerry-guerrero-ba8b04101/">Resume</a>
+                    <a href="https://www.linkedin.com/in/jerry-guerrero-ba8b04101/">LinkedIn</a>
                 </li>
             </ul>
         </nav>
@@ -41,34 +42,26 @@
             <h2>About Me</h2>
             <p>I am a coding student currently going through the coding bootcamp at UCLA Extension. I enjoy collecting manga and vinyl as well as playing video games. You can usually find me buried deep in some existential nightmare like <span><a href="https://en.wikipedia.org/wiki/Berserk_(manga)">"Berserk"</a></span> or <span><a href="https://en.wikipedia.org/wiki/Vagabond_(manga)">"Vagabond"</a></span> or slaughtering demons by the hundreds in <span><a href="https://en.wikipedia.org/wiki/Doom_Eternal">"DOOM"</a></span>. When I'm not at my desk making all kinds of cool stuff, of course. I've been hard at work to get into multiple fields including Art, Writing, Programming and Designing. I hope to one day be a master of all like the great <span><a href="https://en.wikipedia.org/wiki/Takeshi_Kitano">Beat Takeshi</a></span> from Japan.</p>
         </section>
-        <section class="work" id="work">
+        <section class="work container-fluid" id="work">
             <h2>Work</h2>
-                <a href="https://jguerrero126.github.io/Optimizing-The-SEO/">
-                    <figure id="Horiseon" style="background-image: url(./assets/Images/Screenshot1.png);">
-                        <div>
-                            <figcaption>Horiseon</figcaption>
-                            <figcaption>Refactored Coding</figcaption>
-                        </div>
-                    </figure>
+            <div class="custom-container">
+                <a href="https://jguerrero126.github.io/All-Your-Music-Needs/">
+                    <img id="Horiseon" src="./assets/Images/ScreenshotAYMN.jpeg">
+                    <div class="caption">All Your Music Needs<br>HTML/CSS/JS</div>
                 </a>
-                <a href="https://jguerrero126.github.io/Classwork-Stuff/">
-                    <figure id="Nacho" style="background-image: url(./assets/Images/Screenshot2.png);">
-                        <div>
-                            <figcaption>Nacho</figcaption>
-                            <figcaption>HTML/CSS</figcaption>
-                        </div>
-                    </figure>
+            </div>
+            <div class="custom-container">
+                <a href="https://jguerrero126.github.io/Code-Quiz/">
+                    <img id="Nacho" src="./assets/Images/ScreenshotCQ.png">
+                    <div class="caption">Coding Quiz<br>HTML/CSS/JS</div>
                 </a>
-                <a href="https://en.wikipedia.org/wiki/Berserk_(manga)">
-                    <figure id="Placeholder" style="background-image: url(./assets/Images/guts-in-woods.jpg);">
-                        <div>
-                            <figcaption>Placeholder</figcaption>
-                            <figcaption>Design</figcaption>
-                        </div>
-                    </figure>
+            </div>
+            <div class="custom-container">
+                <a href="https://jguerrero126.github.io/Password-Generator/">
+                    <img id="Placeholder" src="./assets/Images/ScreenshotPG.png">
+                    <div class="caption">Password Generator<br>HTML/CSS/JS</div>
                 </a>
-            <img>
-            <img>
+            </div>
         </section>
         <section class="contact-me" id="contact-me">
             <h2>Contact Me</h2>
@@ -77,7 +70,7 @@
                     <a href="https://www.linkedin.com/in/jerry-guerrero-ba8b04101/">Linkedin</a>
                 </li>
                 <li>
-                    <a href="mailto:jerry1996714@gmail.com">Email</a>
+                    <a href="mailto:JerryGDev126@gmail.com">Email</a>
                 </li>
                 <li>
                     <a href="https://github.com/JGuerrero126">Github</a>
@@ -88,11 +81,14 @@
                 <li>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Spotify</a>
                 </li>
+                <li>
+                    <a href="./assets/JerryResume.pdf" download="Resume">Resume</a>
+                </li>
             </ul>
         </section>
     </main>
     <footer>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
