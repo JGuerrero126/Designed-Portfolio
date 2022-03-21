@@ -221,6 +221,15 @@ h2:hover {
     .hero {
         height: 900px;
     }
+
+    header a,
+    .contact-me a {
+        color: black;
+    }
+
+    header h1 {
+        color: black;
+    }
 }
   
 @media screen and (max-width: 576px) {
